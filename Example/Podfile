@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'iOS-Component-ModuleB_Example' do
+  pod 'iOS-Component-ModuleB', :path => '../'
+
+  target 'iOS-Component-ModuleB_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
